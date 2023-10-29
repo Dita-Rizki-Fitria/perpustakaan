@@ -48,6 +48,8 @@
 .box1{
   width:805px;
   height:300px;
+  left: 20%;
+  margin: 70px;
   background:#262931;
   border-radius: 5px;
   position:absolute;
@@ -55,7 +57,7 @@
   right: 22.5%;
   }
 
-.text h4 {
+.textbox h4 {
   font-family: Copperplate, "Copperplate Gothic Light";
   text-shadow: 2px 2px 5px rgb(255, 255, 255);
   position: absolute;
@@ -152,4 +154,44 @@
 }
 #checkbox:checked ~ .body .side-bar a span {
   display: none;
+}
+.form-container {
+  max-width: 0 auto;
+  margin-left: 80px;
+  margin-top: 15px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #262931;
+}
+.form-container h4 {
+margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: small;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
