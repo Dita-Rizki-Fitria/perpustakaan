@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buku</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="checkbox" />
+    <header class="header">
+
+        <label for="checkbox">
+            <strong><i id="navbtn" class="" aria-hidden="true">Menu</i></strong>
+        </label>
+        <div class="right_area">
+            <h3><strong>PERPUSTAKAAN ONLINE</strong></h3>
+        </div>
+    </header>
+    <div class="body">
+        <nav class="side-bar">
+            <div class="user-p">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="" aria-hidden="true"></i>
+                        <span>Buku</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="text-dark p-4 col-4">
+                  <ins>
+                      <h3><strong>ㅤBukuㅤ</strong></h3>
+                  </ins>
+                  <div class="conten">
+                      <div class="text-dark p-6 ">
+                          <strong>
+                              <p>Buku Baru</p>
+                          </strong>
+                          <div class="rounded-pill alert alert-secondary ">
+                              <div class="form-group text-dark   ">
+                                  <label for="" class="control-label">Id Buku</label>
+                                  <input type="text" class="form-control form-control-sm" required>
+                              </div>
+                              <div class="form-group  text-dark">
+                                  <label for="" class="control-label">Judul Buku</label>
+                                  <input type="text" class="form-control form-control-sm">
+                              </div>
+                              <div class="form-group  text-dark">
+                              <label for="" class="control-label">Penerbit</label>
+                              <select class="custom-select custom-select-sm">
+                                <option selected>Select</option>
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                              </select>
+                            </div>
+                              <div class="form-group  text-dark">
+                                  <label for="" class="control-label">Pengarang</label>
+                                  <input type="number" class="form-control form-control-sm">
+                              </div>
+                              <div class="form-group  text-dark">
+                                <label for="" class="control-label">Kategori</label>
+                                <select class="custom-select custom-select-sm">
+                                  <option selected>Select</option>
+                                  <option value="1">A</option>
+                                  <option value="2">B</option>
+                                  <option value="3">C</option>
+                                </select>
+                              </div>
+                              <div class="form-group  text-dark">
+                                <label for="" class="control-label">Tahun Terbit</label>
+                                <select class="custom-select custom-select-sm">
+                                  <option selected>Select</option>
+                                  <option value="1">A</option>
+                                  <option value="2">B</option>
+                                  <option value="3">C</option>
+                                </select>
+                              </div>
+                              <div class="form-group  text-dark">
+                                <label for="" class="control-label">Stok</label>
+                                <select class="custom-select custom-select-sm">
+                                  <option selected>Select</option>
+                                  <option value="1">A</option>
+                                  <option value="2">B</option>
+                                  <option value="3">C</option>
+                                </select>
+                              </div>
+                              <a href="#" class="btn btn-primary">Simpan</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br>
+
+        <div class="table-responsive">
+        <div class="text-dark col p-6">
+            <br><br>
+            <div class="text-dark p-4 ">
+                <strong>
+                    <p>Data Buku</p>
+                </strong>
+                <table class="table table-bordered text-dark h-10"  >
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Id Buku</th>
+                            <th scope="col">Judul Buku</th>
+                            <th scope="col">Penerbit</th>
+                            <th scope="col">Pengarang</th>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">Tahun Terbit</th>
+                            <th scope="col">Stok</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Id Buku</td>
+                            <td>Judul Buku</td>
+                            <td>Penerbit</td>
+                            <td>Pengarang</td>
+                            <td>Kategori</td>
+                            <td>Tahun Terbit</td>
+                            <td>Stok</td>
+                            <td>
+                                <a href="edit.html" class="">
+                                    <span id="boot-icon" class="bi bi-pencil-fill"
+                                        style="font-size: 1rem; color: rgb(0, 0, 0);"></span>
+                                </a>
+                                <a href="" type="button" class="bi bi-trash-fill" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="font-size: 1rem; color: rgb(255, 0, 0);">
+                                </a>
+    
+                            </td>
+                        </tr>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-dark">
+                                        <em>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Buku</h5>
+                                        </em>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-dark">
+                                        <strong>Apakah anda ingin menghapus data ini ?ㅤ<strong>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="index.html" class="btn btn-secondary">Tidak</a>
+                                        <a href="index.html" class="btn btn-primary">Ya</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Id Buku</td>
+                            <td>Judul Buku</td>
+                            <td>Penerbit</td>
+                            <td>Pengarang</td>
+                            <td>Kategori</td>
+                            <td>Tahun Terbit</td>
+                            <td>Stok</td>
+                            <td>
+                                <a href="edit.html" class="">
+                                    <span id="boot-icon" class="bi bi-pencil-fill"
+                                        style="font-size: 1rem; color: rgb(0, 0, 0);"></span>
+                                </a>
+                                <a href="" type="button" class="bi bi-trash-fill" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="font-size: 1rem; color: rgb(255, 0, 0);">
+                                </a>
+    
+                            </td>
+                        </tr>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-dark">
+                                        <em>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Buku</h5>
+                                        </em>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-dark">
+                                        <strong>Apakah anda ingin menghapus data ini ?ㅤ<strong>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="index.html" class="btn btn-secondary">Tidak</a>
+                                        <a href="index.html" class="btn btn-primary">Ya</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Id Buku</td>
+                            <td>Judul Buku</td>
+                            <td>Penerbit</td>
+                            <td>Pengarang</td>
+                            <td>Kategori</td>
+                            <td>Tahun Terbit</td>
+                            <td>Stok</td>
+                            <td>
+                                <a href="edit.html" class="">
+                                    <span id="boot-icon" class="bi bi-pencil-fill"
+                                        style="font-size: 1rem; color: rgb(0, 0, 0);"></span>
+                                </a>
+                                <a href="" type="button" class="bi bi-trash-fill" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="font-size: 1rem; color: rgb(255, 0, 0);">
+                                </a>
+    
+                            </td>
+                        </tr>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-dark">
+                                        <em>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Buku</h5>
+                                        </em>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-dark">
+                                        <strong>Apakah anda ingin menghapus data ini ?<strong>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="index.html" class="btn btn-secondary">Tidak</a>
+                                        <a href="index.html" class="btn btn-primary">Ya</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <tr>
+                            <th scope="row">4</th>
+                            
+                            <td>Id Buku</td>
+                            <td>Judul Buku</td>
+                            <td>Penerbit</td>
+                            <td>Pengarang</td>
+                            <td>Kategori</td>
+                            <td>Tahun Terbit</td>
+                            <td>Stok</td>
+                            <td>
+                                <a href="edit.html" class="">
+                                    <span id="boot-icon" class="bi bi-pencil-fill"
+                                        style="font-size: 1rem; color: rgb(0, 0, 0);"></span>
+                                </a>
+                                <a href="" type="button" class="bi bi-trash-fill" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="font-size: 1rem; color: rgb(255, 0, 0);">
+                                </a>
+    
+                            </td>
+                        </tr>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-dark">
+                                        <em>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Buku</h5>
+                                        </em>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-dark">
+                                        <strong>Apakah anda ingin menghapus data ini ?ㅤ<strong>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="index.html" class="btn btn-secondary">Tidak</a>
+                                        <a href="index.html" class="btn btn-primary">Ya</a>
+                                    </div>
+                                </div>
+                            
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</div>
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
