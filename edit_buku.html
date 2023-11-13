@@ -3,8 +3,7 @@
 
 <head>
     <title>Buku</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="asset/css/style.css" />
@@ -13,32 +12,12 @@
 
 <body>
     <input type="checkbox" id="checkbox" />
-    <header class="header">
-
-        <label for="checkbox">
-            <strong><i id="navbtn" class="" aria-hidden="true">Menu</i></strong>
-        </label>
-        <div class="right_area">
-            <h3><strong>PERPUSTAKAAN ONLINE</strong></h3>
-        </div>
-    </header>
+    <div id="top"></div>
     <div class="body">
-        <nav class="side-bar">
-            <div class="user-p">
-            </div>
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="" aria-hidden="true"></i>
-                        <strong><span>Buku</span></strong>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
+        <div class="nav_kiri" id="kiri"></div>
         <div class="text-dark p-4 col-4">
             <ins>
-                <h3><strong>ㅤBukuㅤ</strong></h3>
+                <h3><strong>Buku</strong></h3>
             </ins>
             <div class="conten">
                 <div class="text-dark p-6 ">
@@ -55,26 +34,22 @@
                             <input type="text" class="form-control form-control-sm">
                         </div>
                         <div class="form-group  text-dark">
-<<<<<<< HEAD:edit_buku.html
-                        <label for="" class="control-label">Penerbit</label>
-                        <select class="custom-select custom-select-sm">
+                            <select class="custom-select custom-select-sm">
                           <option selected>Select</option>
                           <option value="1">A</option>
                           <option value="2">B</option>
                           <option value="3">C</option>
                         </select>
-                      </div>
+                        </div>
                         <div class="form-group  text-dark">
                             <label for="" class="control-label">Pengarang</label>
-                            <input type="number" class="form-control form-control-sm">
-=======
+                            <input type="number" class="form-control form-control-sm"> =======
                             <label for="" class="control-label">No Handphone</label>
                             <input type="text" class="form-control form-control-sm">
->>>>>>> 36cc828303d1d88313aeacca580e574c2dca452d:asset/penerbit(kreasi)/edit.html
                         </div>
                         <div class="form-group  text-dark">
-                          <label for="" class="control-label">Kategori</label>
-                          <select class="custom-select custom-select-sm">
+                            <label for="" class="control-label">Kategori</label>
+                            <select class="custom-select custom-select-sm">
                             <option selected>Select</option>
                             <option value="1">A</option>
                             <option value="2">B</option>
@@ -82,8 +57,8 @@
                           </select>
                         </div>
                         <div class="form-group  text-dark">
-                          <label for="" class="control-label">Tahun Terbit</label>
-                          <select class="custom-select custom-select-sm">
+                            <label for="" class="control-label">Tahun Terbit</label>
+                            <select class="custom-select custom-select-sm">
                             <option selected>Select</option>
                             <option value="1">A</option>
                             <option value="2">B</option>
@@ -91,16 +66,15 @@
                           </select>
                         </div>
                         <div class="form-group  text-dark">
-                          <label for="" class="control-label">Stok</label>
-                          <select class="custom-select custom-select-sm">
+                            <label for="" class="control-label">Stok</label>
+                            <select class="custom-select custom-select-sm">
                             <option selected>Select</option>
                             <option value="1">A</option>
                             <option value="2">B</option>
                             <option value="3">C</option>
                           </select>
                         </div>
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#exampleModalCenter">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                             Simpan
                         </button>
                     </div>
@@ -108,8 +82,7 @@
             </div>
         </div>
 
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header text-dark">
@@ -131,15 +104,17 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                    crossorigin="anonymous"></script>
+            <script src="asset/js/lock_header.js"></script>
+            <script src="asset/js/lock_navbar.js"></script>
 
 </body>
 
