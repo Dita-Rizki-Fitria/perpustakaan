@@ -1,147 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300&family=Open+Sans:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
 }
-body {
-    min-height: 100vh;
-    background-color: #000000;
-    
-    
-}
-a {
-    text-decoration: none;
-}
-li {
-    list-style: none;
-   
-}
-h1,h2 {
-    color: #000000;
-    text-align: center;
-    font-size: 25px;
-}
-.side-menu {
-    position: fixed;
-    background: #7d9486;
-    width: 13vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-.side-menu .brand-name {
-    height: 9vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.side-menu li {
-    font-size: 16px;
-    padding: 10px 20px;
-    color: #000000;
-    display: flex;
-    align-items: center;
-}
-.side-menu li:hover {
-    background: #B2C8BA;
-    cursor: pointer;
-}
-.container {
-    position: absolute;
-    right: 0;
-    width: 87vw;
-    min-height: 100vh;
-    background-image: url(img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
-}
-.container .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 87vw;
-    height: 8vh;
-    background: #B2C8BA;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    justify-content: center;
-}
-.container .header .nav {
-    width: 170%;
-    justify-content: center;
-    align-items: center;
-}
-.container .header .nav .title {
-    padding: 8px 20px;
-}
-.container .content {
-
-   
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+  background:#90989D;
+  color: #fff;
 }
 
-.container .judul {
-    margin-right: 900px;
-    margin-top: 80px;
-    padding: 25px;
-    font-size: 22px;
-    font-family: "Open Sans", sans-serif;
+.right_area h3 {
+  font-family: 'Open Sans';
 }
-.container .content .baris {
-    margin-right: 900px;
-    padding-top: 1px;
-    font-style: oblique;
-    font-size: 19px;
-    font-family: "Open Sans", sans-serif;
+
+.body {
+  background-color : #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: 1980px 980px;
+  color: white;
+  font-size: 16px;
+  display: flex;
 }
-input[type=text], select {
-    width: 100%;
-    padding: 10px 20px;
-    margin: 10px 0px;
-    border-radius: 1px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+.side-bar {
+  width: 250px;
+  background: #90989D;
+  min-height: 100vh;
+  transition: 500ms width;
 }
-.container .content .card {
-    border-radius: 35px;
-    background-color: #c5c5c5;
-    padding: 20px;
-    margin-left: 50px;
-    width: 300px;
-    box-sizing: border-box;
-    justify-content: space-between;
+
+.side-bar ul {
+  margin-top: 20px;
+  list-style: none;
 }
-input[type=submit], select {
-    width: 40%;
-    background-color: #7d9486;
-    color: #ffffff;
-    padding: 12px 20px;
-    margin: 8px 0px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-left: 150px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+.side-bar ul li {
+  font-size: 20px;
+  padding: 15px 0px;
+  padding-left: 60px;
+  transition: 500ms background;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.container .content .tabel {   
-    margin-left: 450px;
-    width: 700px;
-    box-sizing: border-box;
-    letter-spacing: 2px;
-    font-size: 20px;
-    
-    justify-content: space-between;
+.side-bar ul li:hover {
+  background: #595a5a;
 }
-.container .content .tabel table {
-    position: relative;
-    justify-content: space-between;
-     
+.side-bar ul li a {
+  text-decoration: none;
+  color: #eee;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
-.container .content .tabel h2 {
-    color: #fafafa;
-    margin-right: 460px;
+.side-bar ul li a i {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 23px;
+}
+#navbtn {
+  display: inline-block;
+  margin-left: 70px;
+  font-size: 25px;
+  transition: 500ms color;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+  width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p {
+  visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span {
+  font-family: 'Open Sans';
+  display: none;
+  
 }
