@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300&family=Open+Sans:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+  background:#90989D;
+  color: #fff;
+}
+
+.right_area h3 {
+  font-family: 'Open Sans';
+}
+
+.body {
+  background-color : #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: 1980px 980px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+}
+
+.side-bar {
+  width: 135px;
+  background: #90989D;
+  min-height: 100vh;
+  transition: 500ms width;
+}
+
+.side-bar ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.side-bar ul li {
+  font-size: 20px;
+  padding: 15px 0px;
+  padding-left: 9px;
+  transition: 500ms background;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.side-bar ul li:hover {
+  background: #595a5a;
+}
+.side-bar ul li a {
+  text-decoration: none;
+  color: #eee;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.side-bar ul li a i {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 23px;
+}
+#navbtn {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 30px;
+  transition: 500ms color;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+  width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p {
+  visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span {
+  font-family: 'Open Sans';
+  display: none;
+  
+}
