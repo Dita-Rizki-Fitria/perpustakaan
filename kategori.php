@@ -53,7 +53,7 @@
                                 <th scope="col">Aksi</th>
                             </tr>
                         </thead>
-                        <?php
+                <?php
                   $no = 1;  
                   include "action/koneksi.php";
                   $data = mysqli_query($koneksi, "SELECT * FROM kategori_buku");

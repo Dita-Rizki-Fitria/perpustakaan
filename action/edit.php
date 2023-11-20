@@ -8,17 +8,17 @@ if (isset($_POST['ubah'])) {
 
     
     
-    $update = mysqli_query($koneksi, "UPDATE kategori_buku SET kategori='$kategori' WHERE kategori_buku . id_kategori='$id_kategori'");
+    $update = mysqli_query($koneksi, "UPDATE kategori_buku SET kategori='$kategori' WHERE id_kategori='$id_kategori'");
 
     if ($update) {
         echo "<script>
                 alert('Data berhasil dieditkan !');
-                document.location='../kategori.php';
+                document.location='../editkategori.php';
               </script>";
     } else {
         echo "<script>
         alert('Data gagal dieditkan !');
-        document.location='../kategori.php';
+        document.location='../editkategori.php';
         </script>";
     }
 }
